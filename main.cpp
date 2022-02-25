@@ -15,7 +15,8 @@ struct info
     string mobilenumber;
 };
 deque<info> department[6];
-class parent{
+class parent
+{
 private:
     info take_data()
     {
@@ -47,7 +48,8 @@ private:
                 break;
             cout << "\n  Invalid Gender Try Again.. \n";
         }
-        while(1){
+        while(1)
+        {
             cout <<"\n  Age            : ";
             cin >> age;
             int ok = (age[0] != '0');
@@ -115,7 +117,8 @@ private:
     }
     void view(int idx)
     {
-        for(int i = 0; i < department[idx].size() ;++i){
+        for(int i = 0; i < department[idx].size() ; ++i)
+        {
             confirm(department[idx][i],2,i);
         }
     }
@@ -144,16 +147,23 @@ private:
         do
         {
             cin >> x;
-            if(x == "1"){
+            if(x == "1")
+            {
                 GENERAL();
                 return;
-            }else if(x == "2"){
+            }
+            else if(x == "2")
+            {
                 HEART();
                 return;
-            }else if(x == "3"){
+            }
+            else if(x == "3")
+            {
                 LUNG();
                 return;
-            }else if(x == "4"){
+            }
+            else if(x == "4")
+            {
                 PLASTIC();
                 return;
             }
@@ -170,14 +180,15 @@ private:
         do
         {
             cin >> x;
-            if(x == "1"){
+            if(x == "1")
+            {
                 info tmp = take_data();
                 confirm(tmp,1,0);
                 department[1].push_back(tmp);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			GENERAL();
-	 			return;
+                cin >> y;
+                GENERAL();
+                return;
             }
             else if(x == "2")
             {
@@ -186,21 +197,24 @@ private:
                 department[1].push_front(tmp);
                 cout << "\n   Press any key";
                 cin >> y;
-	 			GENERAL();
-	 			return;
+                GENERAL();
+                return;
             }
             else if(x == "3")
             {
                 view(1);
-                cout << "\n   Press any key  " << department[1].size() << endl;
-	    		cin >> y;
-	 			GENERAL();
-	 			return;
+                cout << "\n   Press any key ";
+                cin >> y;
+                GENERAL();
+                return;
             }
-            else if(x == "4"){
+            else if(x == "4")
+            {
                 main_view();
                 return;
-            }else{
+            }
+            else
+            {
                 GENERAL();
                 return;
             }
@@ -215,14 +229,15 @@ private:
         do
         {
             cin >> x;
-            if(x == "1"){
+            if(x == "1")
+            {
                 info tmp = take_data();
                 confirm(tmp,1,0);
                 department[2].push_back(tmp);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			HEART();
-	 			return;
+                cin >> y;
+                HEART();
+                return;
             }
             else if(x == "2")
             {
@@ -231,21 +246,24 @@ private:
                 department[2].push_front(tmp);
                 cout << "\n   Press any key";
                 cin >> y;
-	 			HEART();
-	 			return;
+                HEART();
+                return;
             }
             else if(x == "3")
             {
                 view(2);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			HEART();
-	 			return;
+                cin >> y;
+                HEART();
+                return;
             }
-            else if(x == "4"){
+            else if(x == "4")
+            {
                 main_view();
                 return;
-            }else{
+            }
+            else
+            {
                 HEART();
                 return;
             }
@@ -260,14 +278,15 @@ private:
         do
         {
             cin >> x;
-            if(x == "1"){
+            if(x == "1")
+            {
                 info tmp = take_data();
                 confirm(tmp,1,0);
                 department[3].push_back(tmp);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			LUNG();
-	 			return;
+                cin >> y;
+                LUNG();
+                return;
             }
             else if(x == "2")
             {
@@ -276,21 +295,24 @@ private:
                 department[3].push_front(tmp);
                 cout << "\n   Press any key";
                 cin >> y;
-	 			LUNG();
-	 			return;
+                LUNG();
+                return;
             }
             else if(x == "3")
             {
                 view(3);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			LUNG();
-	 			return;
+                cin >> y;
+                LUNG();
+                return;
             }
-            else if(x == "4"){
+            else if(x == "4")
+            {
                 main_view();
                 return;
-            }else{
+            }
+            else
+            {
                 LUNG();
                 return;
             }
@@ -305,14 +327,15 @@ private:
         do
         {
             cin >> x;
-            if(x == "1"){
+            if(x == "1")
+            {
                 info tmp = take_data();
                 confirm(tmp,1,0);
                 department[4].push_back(tmp);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			PLASTIC();
-	 			return;
+                cin >> y;
+                PLASTIC();
+                return;
             }
             else if(x == "2")
             {
@@ -321,21 +344,24 @@ private:
                 department[4].push_front(tmp);
                 cout << "\n   Press any key";
                 cin >> y;
-	 			PLASTIC();
-	 			return;
+                PLASTIC();
+                return;
             }
             else if(x == "3")
             {
                 view(4);
                 cout << "\n   Press any key";
-	    		cin >> y;
-	 			PLASTIC();
-	 			return;
+                cin >> y;
+                PLASTIC();
+                return;
             }
-            else if(x == "4"){
+            else if(x == "4")
+            {
                 main_view();
                 return;
-            }else{
+            }
+            else
+            {
                 PLASTIC();
                 return;
             }
